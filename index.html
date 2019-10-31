@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculo de presupuesto semanal</title>
+    <link rel="stylesheet" href="css/App.css">
+    
+    
+</head>
+
+<body>
+    <div class="App container">
+        <header><h1>Gastos mensual</h1></header>  
+            <div class="contenido-principal contenido">
+                <div class="row">
+                    <div class="one-half column">
+                        <form>
+                            <h2>Agrega tus gastos aqui</h2>
+                            <div class="campo">
+                                <label>Nombre Gasto</label>
+                                <input class="u-full-width" type="text" placeholder="Ej. Transporte" />
+                            </div>
+                        
+                            <div class="campo">
+                                <label>Cantidad</label>
+                                <input class="u-full-width" type="text" placeholder="Ej. 300" />
+                            </div>
+                        
+                            <input class="button-primary u-full-width" type="submit" value="Agregar" />
+                        </form>
+                        
+                    </div>
+                    <div class="one-half column">
+
+                        <div class="gastos-realizados">
+                            <h2>Listado</h2>
+                            
+                        </div>
+
+                        <div class="alert alert-primary">                           
+                            Presupuesto: $ <span id="total"></span>                           
+                        </div>
+                        
+                        <div class="alert alert-success">
+                            Restante: $ <span id="restante"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+    </div> 
+
+    <script src="app.js"></script>
+</body>
+
+
+</html>
